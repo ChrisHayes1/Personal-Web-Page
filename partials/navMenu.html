@@ -1,15 +1,85 @@
 <div id = "volunteerbuttons">
     <b><h2>
-    <a href = "/about" class = "NavMenuButton"> About </a>
-    <hr>    
-    <a href = "/qualifications" class = "NavMenuButton"> Qualifications </a>
-    <hr>
-    <a href = "/experience" class = "NavMenuButton"> Experience </a>
-    <hr>
-    <a href = "/portfolio" class = "NavMenuButton"> Projects </a>
-    <hr>
-    <a href = "/education" class = "NavMenuButton"> Education </a>
-    <hr>
+    <a onclick="changeSub('about.html', 'navAbout')" 
+        class = "NavMenuButton " id ="navAbout" href="javascript:void(0);"> 
+        About 
+    </a><hr class = "NavBreaks" id ="navAbout">   
+
+    <a onclick="changeSub('qualifications.html', 'navQualifications')" 
+        class = "NavMenuButton " id ="navQualifications" href="javascript:void(0);"> 
+        Qualifications 
+    </a><hr class = "NavBreaks" id ="navQualifications">
+
+    <a onclick="changeSub('experience.html', 'navExperience')" 
+        class = "NavMenuButton " id ="navExperience" href="javascript:void(0);"> 
+        Experience 
+    </a><hr class = "NavBreaks" id ="navExperience">
+
+    <a onclick="changeSub('projects.html', 'navProjects')" 
+        class = "NavMenuButton " id ="navProjects" href="javascript:void(0);"> 
+        Projects 
+    </a><hr class = "NavBreaks" id ="navProjects">
+
+    <a onclick="changeSub('education.html', 'navEducation')" 
+        class = "NavMenuButton " id ="navEducation" href="javascript:void(0);"> 
+        Education 
+    </a><hr class = "NavBreaks" id ="navEducation">
+
     </h2>
     </b>
 </div>
+
+<script>
+    var currentPage;
+    var currentID;
+    
+    function changeSub(mPage, mID) {
+        currentPage = mPage;
+        currentID = mID;
+        console.log("running nav for = " + mID);
+        setNav();
+        reloadArticle(currentPage);
+        
+    }
+
+    function setNav(){
+        var docNavButtons = document.querySelectorAll("a.NavMenuButton");
+
+        //Modify selected page
+        docNavButtons.forEach(element => { 
+            if(element.getAttribute("id") == currentID){
+                var mElement = document.getElementById(element.id);
+                
+                element.classList.add("NavMenuSelection");
+            } else {
+                if ( element.classList.contains('NavMenuSelection') )
+                    element.classList.remove("NavMenuSelection");
+            }
+            
+        });
+
+        //Now for the hr element below
+        var docNavBreaks = document.querySelectorAll("hr.NavBreaks");
+
+        docNavBreaks.forEach(element => { 
+            console.log("About to run element " + element.id)
+            console.log("Current ID is  " + currentID)
+            if(element.getAttribute("id") == currentID){
+                console.log("**About to add selection to " + element.id)
+                var mElement = document.getElementById(element.id);
+                console.log(element)
+                element.classList.add("NavMenuSelectionBar");
+            } else {
+                if ( element.classList.contains('NavMenuSelectionBar') )
+                    element.classList.remove("NavMenuSelectionBar");
+            }
+            
+        });
+    }
+
+    
+
+    $(function() {
+        changeSub("experience.html", "navExperience");
+    });
+</script>

@@ -30,6 +30,22 @@
     display: "block";
   }
 
+  .NavMenuSelection {
+    color: rgb(150, 56, 56);
+    font-style: italic;
+  }
+
+
+  .NavBreaks {
+    border: 1px solid rgb(104, 177, 211);
+    margin-top: 2px;
+    margin-bottom: 35px;
+  }
+
+  .NavMenuSelectionBar{
+    border-color: rgb(150, 56, 56);
+  }
+
   a {
     display: block;
     width: 200px;
@@ -42,16 +58,31 @@
     font-style:italic
   }
 
+
+
+  
+
+
    /* Style the list inside the menu */
    nav ul {
     list-style-type: none;
     padding: 0;
   }
 
-  hr {
-    border: 1px solid rgb(104, 177, 211);
-    margin-top: 2px;
-    margin-bottom: 35px;
+ 
+
+  .HeaderOutline {
+    border: 1px solid rgb(134, 138, 139);
+    margin-top: 3px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+  }
+
+  .HeaderText {
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: rgb(68, 114, 156);
+    margin-left: 8px;
   }
 
   .myFooter {
@@ -68,3 +99,24 @@
 
     float: right;
   }
+
+  .ExperienceGroup{
+    text-align: left;
+    padding-left: 25px;
+  }
+
+  .thStandard{
+    text-align: left;
+    padding-left: 25px;
+  }
+
+  .tdStandard{
+    text-align: left;
+    padding-left: 25px;
+  }
+
+  .dateAndLocation{
+    text-align: left;
+    padding-left: 25px;
+  }
+

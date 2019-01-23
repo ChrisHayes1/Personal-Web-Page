@@ -1,0 +1,62 @@
+  *{
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    margin: 0;
+  }
+
+  /*  header style */
+  header {
+    height: 17vh;
+    padding-right: 2vw;
+    padding-left: 1vw;
+    padding-top: 2vh;
+    text-align: right;
+    vertical-align: center;
+    font-size: 2vh;
+    
+  }
+
+  /*  two columns/boxes that floats next to each other */
+  nav {
+    height: 80vh;
+    width: 20%;
+    float: left;
+    padding: 1vw;
+  }
+
+   article {
+    height: 80vh;
+    width: 80%;
+    float: left;
+    padding-left: 20px;
+    overflow: auto
+  }
+
+   /* Clear floats after the columns */
+   section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* footer style */
+  footer {
+    height: 3vh;
+    background-color: #7b7988;
+    color: white;
+    padding: 1px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+
+
+
+  @media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+  }

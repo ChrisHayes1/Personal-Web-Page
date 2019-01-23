@@ -1,0 +1,70 @@
+  /*  header style */
+  header {
+    background-color: 	#1F4E79;
+    color: white;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  }
+
+  /*  two columns/boxes that floats next to each other */
+  nav {
+    background-image: linear-gradient(to right, #d5e7f1, #87b7d8);
+  }
+
+  article {
+    background-color: white;
+    color: black;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  }
+
+ 
+  .NavMenuButton {
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 1px;
+    color: black;
+    align-items: center;
+    text-align: left;
+    height: 35px;
+    line-height: 30px;
+    width: 100%;
+    display: "block";
+  }
+
+  a {
+    display: block;
+    width: 200px;
+    height: 35px;
+    line-height: 30px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    font-style:italic
+  }
+
+   /* Style the list inside the menu */
+   nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  hr {
+    border: 1px solid rgb(104, 177, 211);
+    margin-top: 2px;
+    margin-bottom: 35px;
+  }
+
+  .myFooter {
+    position: relative;
+    vertical-align: inherit;
+  }
+
+  .subHeader {
+    display: inline;
+    float: left;
+    font-size: x-large
+  }
+  .subSubHeader{
+
+    float: right;
+  }

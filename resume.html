@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    
+    <title>C. Todd Hayes-Birchler</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="assets/layout.css">
+    <link rel="stylesheet" type="text/css" href="assets/siteTheme.css">
+</head>
+
+<body>
+    <header>
+      <h1>Welcome </h1>
+    </header>
+
+    <section>
+      <nav>
+          <div class = "myNav">
+
+          </div>
+      </nav>
+      <article>
+          <p> this is some article</p>
+      </article>
+    </section>
+
+    <footer>
+        <div class = "myFooter">
+
+        </div>
+    </footer>
+</body>
+
+
+<script> 
+    $(function() {
+        $('.myFooter').load("partials/footer.html")
+    });
+    $(function() {
+        $('.myNav').load("partials/navMenu.html")
+    });
+</script>

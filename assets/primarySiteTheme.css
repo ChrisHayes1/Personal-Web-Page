@@ -1,0 +1,391 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+/*  header style */
+header {
+  background-color: #638650;
+  padding: 1px;
+  text-align: center;
+  vertical-align: top;
+  font-size: 3vh;
+  color: white;
+  height: 15vh;
+}
+
+h2 img {
+  float: left;
+  max-width: 11vh;
+}
+
+/*  two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 80vh; /* filler until we have a real side bar with info */
+  background: #99b27f;
+  padding: 5px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* style for the nav options */
+#volunteerbuttons {
+  display: none;
+}
+
+#coordinatorbuttons {
+  display: none;
+}
+
+article {
+  float: left;
+  padding-left: 20px;
+  width: 85%;
+  background-color: #f1f1f1;
+  height: 80vh;
+  overflow: auto
+}
+
+Application_Status_Bar {
+  width: 90%;
+  background-color: #ddd;
+}
+
+#progressBar {
+width: 10%;
+height: 50px;
+background-color: #638650;
+text-align: center;
+line-height: 50px;
+color: black;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* footer style */
+footer {
+  background-color: #638650;
+  padding: 2px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  height: 5vh;
+}
+
+
+.NavMenuButton {
+  border-color: #99b27f;
+  position: relative;
+  border-radius: 25px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  border: 2px solid white;
+  color: white;
+  background-color: #336600;
+  align-items: center;
+  text-align: center;
+  height: 35px;
+  line-height: 30px;
+  width: 100%;
+}
+
+.NavMenuSelection{
+    background-color: #e79541;
+}
+
+.FormStandardControl {
+  position: relative;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+a {
+  display: block;
+  width: 200px;
+  height: 35px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #336600;
+  background-color: white;
+}
+
+fieldset {
+  margin-left: 8px;
+  border: 2px solid #638650;
+  border-style: outset ;
+}
+
+/*Styles related to viewing profile*/
+.ViewProfile {
+background-color: blanchedalmond;
+}
+
+.ViewProfileLabel {
+position: relative;
+text-align: right;
+color: #638650;
+font-size: 18px;
+margin-left: 3px;
+padding-left: 10px;
+}
+
+.ViewProfileValue {
+position: relative;
+text-align: left;
+vertical-align: middle;
+box-sizing: border-box;
+height: auto;
+padding-left: 10px;
+margin-left: 20px;
+color: black;
+font-size: 18px;
+}
+
+.ViewProfileHeader {
+padding-top: 10px;
+padding-bottom: 0px;
+}
+
+
+
+/*Styles reldated to editing the profile*/
+
+.EditProfile {
+background-color: #e79541;
+}
+
+.EditProfileSmall {
+background-color: #e79541;
+width: 50%;
+}
+
+.EditProfileMed {
+background-color: #e79541;
+width: 80%;
+}
+
+.EditProfileBtn {
+position: relative;
+float: right;
+border-radius: 25px;
+border: 3px solid #638650;
+margin-bottom: 20px;
+margin-top : 5px;
+color: black;
+background-color: white;
+z-index: 1
+}
+
+.EditProfileBtnCancel {
+position: relative;
+float: right;
+border-radius: 25px;
+border: 3px solid #e79541;
+margin-bottom: 20px;
+color: black;
+background-color: white;
+margin-top : 5px;
+}
+
+.DeleteAccountButton {
+position: relative;
+float: right;
+border-radius: 10px;
+border: 3px solid #e79541;
+margin-bottom: 5px;
+margin-top: 5px;
+color: black;
+background-color: white;
+height: 25px;
+line-height: 20px;
+width: 10vw;
+}
+
+.TrainingListTable {
+position: relative;
+float: right;
+}
+
+.EditProfileHeader {
+padding-top: 10px;
+padding-bottom: 5px;
+}
+
+.EditProfileLabel {
+position: relative;
+text-align: right;
+padding-left: 10px;
+color: white;
+font-size: 18px;
+}
+
+.EditProfileLabelSub {
+position: relative;
+text-align: right;
+color: black;
+font-size: 16px;
+padding-left: 40px;
+}
+
+.EditProfileInput {
+position: relative;
+vertical-align: middle;
+box-sizing: border-box;
+height: auto;
+padding-left: 10px;
+margin-left: 20px;
+border-radius: 15px;
+border: 1px solid black;
+color: black;
+font-size: 18px;
+}
+
+
+.EditProfileInputSub {
+position: relative;
+vertical-align: middle;
+box-sizing: border-box;
+height: auto;
+padding-left: 10px;
+margin-left: 1px;
+border-radius: 15px;
+border: 1px solid black;
+color: black;
+font-size: 16px;
+}
+
+legend {
+  padding: 2px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+      width: 100%;
+      height: auto;
+  }
+}
+
+
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+background-color: #fefefe;
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 40%;
+}
+
+/* The Close Button */
+.close {
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+position: relative;
+align-self: right;
+border-radius: 25px;
+border: 3px solid #638650;
+margin-top : 5px;
+margin-left : 5px;
+color: black;
+background-color: white;
+z-index: 1;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+background-color: #638650;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 10;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.EditDropdownButton {
+display: block;
+width: 100%;
+box-sizing: border-box;
+border-radius: 5px;
+border: 3px solid #638650;
+color: black;
+background-color: white;
+z-index: 1
+}
+
+/* filter list */
+.filterList{
+display: relative;
+float: right;
+}

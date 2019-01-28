@@ -78,6 +78,13 @@
     margin-right: 10px;
   }
 
+  .HeaderDetail {
+    color: black;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+  }
+
   .HeaderText {
     font-weight: bolder;
     font-size: 1.5em;
@@ -120,3 +127,21 @@
     padding-left: 25px;
   }
 
+.indentedList{
+  padding-left: 100px;
+}
+
+.indHeader{
+  padding-left: 75px;
+}
+
+.toggleButton {
+  display: inline;
+  
+  border-radius: 25px;
+  border: 3px solid rgb(73, 146, 180);
+  color: rgb(73, 146, 180);
+  background-color: white;
+  margin-right: 10px;             
+  z-index: 1
+}

@@ -47,4 +47,67 @@
         $('#myArticle').load(mPage)
     }
     
+    function toggleSub(btnID, secID){
+        console.log("toggle sub for " + btnID);
+        var y = document.getElementById(btnID);
+        if (y.innerHTML == "+")
+            y.innerHTML = "-";
+        else
+            y.innerHTML = "+";
+        toggleVisible(secID);
+    };
+    
+    function toggleVisible(mID) {
+        console.log("toggle visible for " + mID);
+        var x = document.getElementById(mID);
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    };
+
+    
+
+    
+
+    function toggleExp(secID){
+
+        var secSub = secID + 'Sub';
+        if (document.getElementById(secSub + "Btn").innerHTML == "-"){
+            document.getElementById(secID + 'Detail').style.display = "block";
+            toggleSub(secSub + "Btn", secSub);
+            
+        } else {
+            var expSubs = document.querySelectorAll(".experienceSub");
+            //Modify selected page
+            expSubs.forEach(element => { 
+                console.log("checking " + element)
+                var btnName = element.id + 'Btn'
+                var spanDet = element.id.replace('Sub', 'Detail');
+                console.log("button name = " + btnName);
+                var btn = document.getElementById(btnName);
+                //console.log("button = " + btn.getAttribute('id'));
+                if (element.id == secSub){
+                    console.log("selected id")
+                    btn.innerHTML = "-";
+                    element.style.display = "block";
+                    console.log("spanDet (set none)= " + spanDet);
+                    document.getElementById(spanDet).style.display = "none";
+                } else {
+                    console.log("hidden id")
+                    btn.innerHTML = "+";
+                    element.style.display = "none";
+                    console.log("spanDet (set block)= " + spanDet);
+                    document.getElementById(spanDet).style.display = "block";
+                }
+            });
+        }
+        jump(secID);
+    };
+    
+    function jump(mID) {
+        document.getElementById(mID).scrollIntoView();
+    };
+
 </script>

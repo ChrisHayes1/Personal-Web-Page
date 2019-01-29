@@ -32,20 +32,41 @@
 <script>
     var currentPage;
     var currentID;
-    
+    var isPaused;
+
+    function changeSubLoadToSection(mPage, mID, mElement){
+        isPaused = true;
+        console.log('--->Starting Change Sub changeSubLoadToSection ' + mElement);
+        changeSub(mPage, mID);
+        console.log('--->running change section on');
+
+        waitForIt();
+
+        function waitForIt(){
+            if (isPaused) {
+                setTimeout(function(){waitForIt()},100);
+            } else {
+                console.log('--->Starting toggleExp on changeSubLoadToSection');
+                //page caled in changeSub is loading too slowley, toggleExp is beating page load. 
+                toggleExpFull(mElement, false);
+                console.log('--->Ending toggleExp on changeSubLoadToSection');
+            }
+        }
+    }
+
     function changeSub(mPage, mID) {
         currentPage = mPage;
         currentID = mID;
-        console.log("running nav for = " + mID);
+        console.log("--->ChangeSub running nav for = " + mID);
         setNav();
         reloadArticle(currentPage);
-        
+        console.log("--->Finishing ChangeSub");
     }
 
     function setNav(){
         var docNavButtons = document.querySelectorAll("a.NavMenuButton");
 
-        //Modify selected page
+        //Modify selected page with highlight class
         docNavButtons.forEach(element => { 
             if(element.getAttribute("id") == currentID){
                 var mElement = document.getElementById(element.id);
@@ -77,10 +98,12 @@
         });
     }
 
-    
+    var DEF_PAGE = "experience.html";
+    var DEF_ID = "navExperience";
+    var DEF_PROJECT = "Datanets"
 
     $(function() {
         //changeSub("projects.html", "navProjects");
-        changeSub("experience.html", "navExperience");
+        changeSub(DEF_PAGE, DEF_ID);
     });
 </script>

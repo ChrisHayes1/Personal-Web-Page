@@ -1,9 +1,44 @@
 <br>
 
-
 <div>
-    <!--sadf-->
+    <table class = "sortable" border = "1">
+        <thead>
+            <th>Project</th>
+            <th>Platform</th>
+            <th>Languages</th>
+            <th>Data Collection</th>
+            <th>Scale</th>
+            <th>Organization</th>
+            <th>Notes</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="#" onclick="toggleExpFull('Datanets'), false">Datanets</a></td>
+                <td>MS Access</td>
+                <td>VBA, XML, Python</td>
+                <td>Split Access Backend</td>
+                <td>30k lines of code, 150+ tables</td>
+                <td>CTRI</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#" onclick="toggleExpFull('Disparities'), false">Disparities</a></td>
+                <td>MS Access</td>
+                <td>VBA</td>
+                <td>SQL Backend, test and production environments</td>
+                <td>Medium</td>
+                <td>CTRI</td>
+                <td>Reworked legacy code for new project.  Major overhall to front end</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+<div>
+    <!--Datanets Detail-->
     <div id =  "Datanets">
+        <br>
         <hr class = "HeaderOutline">
         <button class = "toggleButton" id = "DatanetsSubBtn" onclick="toggleExp('Datanets')">-</button>
         <span class = "HeaderText"> The Datanets</span>
@@ -15,13 +50,47 @@
 
         <div id = "DatanetsSub"  class="experienceSub" style="display:block">
             <p> The Datanets</p>       
-        </div>
+            
+            <div class = "imageCaption"> 
+                <div class = "imageContainer" id = "Datanets">
+                    <img class="imageFill DatanetsSlides" 
+                            id = "Datanets1" 
+                            onclick="displayModal('Datanets1')"
+                            src="assets/images/datanets/Datasets.PNG" 
+                            alt = "Image 1">
 
+                    <img class="imageFill DatanetsSlides" 
+                            id = "Datanets2" 
+                            onclick="displayModal('Datanets2')"
+                            src="assets/images/datanets/DynamicRightClick.PNG" 
+                            alt = "Image 2">
+
+                    <img class="imageFill DatanetsSlides" 
+                            id = "Datanets3" 
+                            onclick="displayModal('Datanets3')"
+                            src="assets/images/datanets/Meta.PNG" 
+                            alt = "Image 3">
+
+                    <img class="imageFill DatanetsSlides" 
+                            id = "Datanets4" 
+                            onclick="displayModal('Datanets4')"
+                            src="assets/images/datanets/spssCodeGen.PNG" 
+                            alt = "Image 4">
+                </div>
+                <div id = "DatanetsCounter" style="display:none">1</div>
+                <br>
+                <p id = "DatanetsCaption"></p>
+                
+                <button class="w3-button w3-display-left" onclick="plusDivs(-1, 'Datanets')">&#10094;</button>
+                <button class="w3-button w3-display-right" onclick="plusDivs(+1, 'Datanets')">&#10095;</button>
+            </div>
+        </div>
         <br>
     </div>
 
     <!--sadf-->
     <div id =  "Disparities">
+        <br>
         <hr class = "HeaderOutline">
         <button class = "toggleButton" id = "DisparitiesSubBtn" onclick="toggleExp('Disparities')">+</button>
         <span class = "HeaderText"> Disparities</span>
@@ -33,26 +102,145 @@
 
         <div id = "DisparitiesSub"  class="experienceSub" style="display:none">
             <p> Disparities</p>
-        </div>
+            <div class = "imageCaption"> 
+                <div class = "imageContainer" id = "Disparities">
+                    <img class="imageFill DisparitiesSlides" 
+                            id = "Disp1" 
+                            onclick="displayModal('Disp1')"
+                            src="assets/images/datanets/spssCodeGen.PNG" 
+                            alt = "Disp Image 1">
 
+                    <img class="imageFill DisparitiesSlides" 
+                            id = "Disp2" 
+                            onclick="displayModal('Disp2')"
+                            src="assets/images/datanets/DynamicRightClick.PNG" 
+                            alt = "Disp Image 2">
+
+                    <img class="imageFill DisparitiesSlides" 
+                            id = "Disp3" 
+                            onclick="displayModal('Disp3')"
+                            src="assets/images/datanets/Meta.PNG" 
+                            alt = "Disp Image 3">
+                </div>
+                <div id = "DisparitiesCounter" style="display:none">1</div>
+                <br>
+                <p id = "DisparitiesCaption"></p>
+                
+                <button class="w3-button w3-display-left" onclick="plusDivs(-1, 'Disparities')">&#10094;</button>
+                <button class="w3-button w3-display-right" onclick="plusDivs(+1, 'Disparities')">&#10095;</button>
+            </div>
+        </div>
         <br>
     </div>
 
     <!--sadf-->
     <div id =  "IVRMon">
-            <hr class = "HeaderOutline">
-            <button class = "toggleButton" id = "IVRMonSubBtn" onclick="toggleExp('IVRMon')">+</button>
-            <span class = "HeaderText"> IVR Monitoring</span>
-            <span class = "HeaderDetail" id = "IVRMonDetail" style = "display:block">
-                    <i>dotnet, c#, dynamic access to multiple projects via DAL, SQL Backend </i> 
-               </span>
-            <hr class = "HeaderOutline">
-            <br>
-    
-            <div id = "IVRMonSub"  class="experienceSub" style="display:none">
-                <p> IVR Monitoring</p>
-            </div>
-    
-            <br>
+        <br>
+        <hr class = "HeaderOutline">
+        <button class = "toggleButton" id = "IVRMonSubBtn" onclick="toggleExp('IVRMon')">+</button>
+        <span class = "HeaderText"> IVR Monitoring</span>
+        <span class = "HeaderDetail" id = "IVRMonDetail" style = "display:block">
+                <i>dotnet, c#, dynamic access to multiple projects via DAL, SQL Backend </i> 
+            </span>
+        <hr class = "HeaderOutline">
+        <br>
+
+        <div id = "IVRMonSub"  class="experienceSub" style="display:none">
+            <p> IVR Monitoring</p>
         </div>
+
+        <br>
+    </div>
 </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">×</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+<script>
+
+
+    //Slide show
+
+    //Load slide show defaults
+    $(function() {
+        var mImgs = document.querySelectorAll(".imageContainer");
+        //Loop through all image containers
+        mImgs.forEach(element => {
+            //call showDivs for the containerID
+            console.log("ABout to run load elements for " + element.getAttribute('id'))
+            showDivs(element.getAttribute('id'));
+        });
+    });
+
+    $(function() {
+        console.log('--->**changing isPaused to false')
+        isPaused = false;
+    });
+
+    //showDivs(slideIndex);
+
+    function plusDivs(n, contID) {
+        //get index container
+        console.log("ABout to run plusDivs for " + contID)
+        var mIndexContainer = document.getElementById(contID + 'Counter');
+        mIndexContainer.innerHTML =  (Number(mIndexContainer.innerHTML) +  Number(n)) ;
+        console.log("...Plus divs changed counter to " + mIndexContainer.innerHTML)
+        showDivs(contID);
+    }
+
+    //contID is the name of the container holding the images
+    //counterID is the name of the container holding the counter
+    function showDivs(contID) {
+        var i;
+        var nContainer = document.getElementById(contID + 'Counter');
+        console.log("...Show Divs Counter is equal to " + Number(nContainer.innerHTML));
+        var x = document.getElementsByClassName(contID + 'Slides');
+        if (nContainer.innerHTML > x.length) {
+            nContainer.innerHTML = 1
+        } 
+        if (nContainer.innerHTML < 1) {nContainer.innerHTML = x.length} ;
+        console.log("...Post function Counter is equal to " + nContainer.innerHTML);
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+        }
+        x[nContainer.innerHTML-1].style.display = "block"; 
+        var nCaption = document.getElementById(contID + 'Caption');
+        nCaption.innerHTML =  x[nContainer.innerHTML-1].getAttribute('alt');
+    }
+
+    
+
+
+    //Modal View of Image
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    var modal = document.getElementById('myModal');
+
+    function displayModal(imgID){
+        // Get the modal
+        
+        console.log("displayModal sent " + imgID);
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById(imgID);
+        
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        captionText.innerHTML = img.alt;
+    }
+    
+    
+    
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
+
+</script>

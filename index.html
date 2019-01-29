@@ -43,6 +43,7 @@
     $(function() {
         $('#myHeader').load("partials/header.html")
     });
+
     function reloadArticle(mPage){
         $('#myArticle').load(mPage)
     }
@@ -70,14 +71,19 @@
     
 
     
-
+    //toggles sub sections in projects.html
     function toggleExp(secID){
+        toggleExpFull(secID, true);
+    };
 
+    function toggleExpFull(secID, runDefault) {
+        console.log('running toggleExp on ' + secID)
         var secSub = secID + 'Sub';
         if (document.getElementById(secSub + "Btn").innerHTML == "-"){
-            document.getElementById(secID + 'Detail').style.display = "block";
-            toggleSub(secSub + "Btn", secSub);
-            
+            if (runDefault) {
+                document.getElementById(secID + 'Detail').style.display = "block";
+                toggleSub(secSub + "Btn", secSub);
+            }
         } else {
             var expSubs = document.querySelectorAll(".experienceSub");
             //Modify selected page
@@ -104,7 +110,7 @@
             });
         }
         jump(secID);
-    };
+    }
     
     function jump(mID) {
         document.getElementById(mID).scrollIntoView();

@@ -1,34 +1,124 @@
 <br>
-
 <div>
-    <table class = "sortable" border = "1">
-        <thead>
+    <hr class = "HeaderOutline">
+    <span class = "HeaderText"> Spotlight Projects</span>
+    <hr class = "HeaderOutline">
+
+    <table class = "keyProjects">
+        <thead class = "keyProjectsHead">
+            <th>Date</th>
             <th>Project</th>
-            <th>Platform</th>
-            <th>Languages</th>
+            <th>&nbsp;Platform&nbsp;</th>
+            <th>&nbsp;Languages&nbsp;</th>
             <th>Data Source</th>
             <th>Scale</th>
             <th>Organization</th>
+            <th>Group?</th>
             <th>Notes</th>
         </thead>
-        <tbody>
+        <tbody class = "keyProjectsBody">
             <tr>
+                <td>2013-Present</td>
                 <td><a href="#" onclick="toggleExpFull('Datanets'), false">Datanets</a></td>
                 <td>MS Access</td>
-                <td>VBA, XML, Python</td>
+                <td>
+                    <p>VBA <br>
+                    XML<br>
+                    Python</p>
+                </td>
                 <td>Split Access Backend</td>
                 <td>30k lines of code, 150+ tables</td>
                 <td>CTRI</td>
+                <td>Solo</td>
                 <td>Largest solo project</td>
             </tr>
             <tr>
+                <td>Fall-2018</td>
+                <td><a href="#" onclick="toggleExpFull('APOD'), false">All Paws On Deck</a></td>
+                <td>Node.JS <br> Express <br> ESJ</td>
+                <td><p>Javascript <br> HTML <br> CSS</p></td>
+                <td>MongoDB</td>
+                <td>Small to Medium</td>
+                <td>CS 506 - Software Engineering</td>
+                <td>Group</td>
+                <td>First Web Development Project <br> Group Leadership <br> Largest team</td>
+            </tr>
+            <tr>
+                <td>Summer-2018</td>
                 <td><a href="#" onclick="toggleExpFull('Disparities'), false">Disparities</a></td>
                 <td>MS Access</td>
                 <td>VBA</td>
-                <td>SQL Backend, test and production environments</td>
+                <td><p>SQL Backend, <br> Test QC, and Prod env</p></td>
                 <td>Medium</td>
                 <td>CTRI</td>
+                <td>Solo</td>
                 <td>Reworked legacy code for new project.  Major overhall to front end</td>
+            </tr>
+            <tr>
+                <td>Summer-2018</td>
+                <td><a href="#" onclick="toggleExpFull('IVRMon'), false">IVR Monitoring</a></td>
+                <td><p>dotnet</p></td>
+                <td>C#</td>
+                <td>Multiple SQL Backends via dynamic DAL</td>
+                <td>Medium</td>
+                <td>CTRI</td>
+                <td>Solo</td>
+                <td>Developing modular architecture, creating services, Data Visualization</td>
+            </tr>
+            <tr>
+                <td>Summer-2018</td>
+                <td><a href="#" onclick="toggleExpFull('LastFM'), false">Last FM</a></td>
+                <td><p>dotnet</p></td>
+                <td>C#</td>
+                <td>Azure MSSQL</td>
+                <td>Small</td>
+                <td>CS 564 - Database Management Systems</td>
+                <td>Group</td>
+                <td>Final project for CS 564</td>
+            </tr>
+            <tr>
+                <td>Spring 2018</std>
+                <td><a href="#" onclick="toggleExpFull('Brackets'), false">Brackets</a></td>
+                <td>javaFX</td>
+                <td><p>Java <br> CSS </p></td>
+                <td>In Memory Data</td>
+                <td>Small</td>
+                <td>CS 400 - Data Structures</td>
+                <td>Group</td>
+                <td>Final project for CS 400</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="#" onclick="toggleExpFull('AddyBook'), false">Address Book</a></td>
+                <td>MS Access</td>
+                <td><p>VBA <br> XML </p></td>
+                <td>SQL Backend</td>
+                <td>Medium</td>
+                <td>CTRI</td>
+                <td>Solo rework</td>
+                <td>Legacy DBA, Front and Backend overhall</td>
+            </tr>
+            <tr>
+                <td>Small</td>
+                <td><a href="#" onclick="toggleExpFull('RiceRocks'), false">Rice Rocks (Astroids)</a></td>
+                <td>Code Sculptor</td>
+                <td><p>Python</p></td>
+                <td>In Memory Data</td>
+                <td></td>
+                <td>Coursera - Interactive programing in Python</td>
+                <td>Solo</td>
+                <td>Final project for coursera certificate</td>
+            </tr>
+            <tr>
+                <td>2011</td>
+                <td><a href="#" onclick="toggleExpFull('PRISM'), false">PRISM</a></td>
+                <td>MS Access</td>
+                <td><p>VBA</p></td>
+                <td>Access RDBMs</td>
+                <td>Medium to large</td>
+                <td>IDRC-UCSF</td>
+                <td>Solo</td>
+                <td>First completed professional project</td>
             </tr>
         </tbody>
     </table>
@@ -43,7 +133,7 @@
         <button class = "toggleButton" id = "DatanetsSubBtn" onclick="toggleExp('Datanets')">-</button>
         <span class = "HeaderText"> The Datanets</span>
         <span class = "HeaderDetail" id = "DatanetsDetail" style = "display:none">
-             <i>Access, VBA, Split Backend, Large Project </i> 
+             <i>Access, VBA, Pyhton, XML, Split Backend, Large Project, CTRI </i> 
         </span>
         <hr class = "HeaderOutline">
         <br>
@@ -159,20 +249,110 @@
         <br>
     </div>
 
-    <!--sadf-->
+    <!--APOD-->
+    <div id =  "APOD">
+        <br>
+        <hr class = "HeaderOutline">
+        <button class = "toggleButton" id = "APODSubBtn" onclick="toggleExp('APOD')">+</button>
+        <span class = "HeaderText"> All Paws On Deck</span>
+        <span class = "HeaderDetail" id = "APODDetail" style = "display:block">
+                <i>Node.JS, Express, EJS, Mongo, Javascript, HTML, CSS, CS 506 (SE), First Web Dev</i> 
+            </span>
+        <hr class = "HeaderOutline">
+        <br>
+
+        <div id = "APODSub"  class="experienceSub" style="display:none">
+            <table>
+                <tr>
+                    <td class = "thStandard"><b>Platform:</b></td>
+                    <td class = "tdStandard">Node.JS, Express, EJS</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Languages:</b></td>
+                    <td class = "tdStandard">Javascript, CSS, HTML</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Data Source:</b></td>
+                    <td class = "tdStandard">MongoDB</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"> <b>Size:</b></td>
+                    <td class = "tdStandard"> </td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Organization:</b></td>
+                    <td class = "tdStandard"> CS 506 - Software Engineering</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Notes:</b></td>
+                    <td class = "tdStandard"> First Web Develoment Project</td>
+                </tr>
+            </table>
+
+            <p><b>Overview</b></p>
+            <p>
+                The majority of the grade in SE centers around a group project.  The group I ended up in was tasked with
+                creating a web page to help with volunteer management for a Humane Society website.  This was not only my
+                first foray into web development, but the entire groups.  
+            </p>
+            <p>
+                Having already had significant experience with app development, I was voted in as group leader.  This 
+                provided a great oppurtunity not just to learn web development, but to learn how to manage a project with
+                a large number of developers (the group had 9 members, myself included)
+            </p>
+            <div class = "imageCaption"> 
+                    <div class = "imageContainer" id = "APOD">
+                        <img class="imageFill APODSlides" 
+                                id = "APOD1" 
+                                onclick="displayModal('APOD1')"
+                                src="assets/images/allpawsondeck/UserProfile.PNG" 
+                                alt = "View Volunteer Profile">
+                        <img class="imageFill APODSlides" 
+                            id = "APOD2" 
+                            onclick="displayModal('APOD2')"
+                            src="assets/images/allpawsondeck/EditUserProfile.PNG" 
+                            alt = "Same page editing of volunteer profile">
+                        <img class="imageFill APODSlides" 
+                            id = "APOD3" 
+                            onclick="displayModal('APOD3')"
+                            src="assets/images/allpawsondeck/UserCalendar.PNG" 
+                            alt = "Volunteers can select available shifts">
+                        <img class="imageFill APODSlides" 
+                            id = "APOD4" 
+                            onclick="displayModal('APOD4')"
+                            src="assets/images/allpawsondeck/coordinatorAddPositions.PNG" 
+                            alt = "The coordinator can add trainings and positions">
+                        <img class="imageFill APODSlides" 
+                            id = "APOD5" 
+                            onclick="displayModal('APOD5')"
+                            src="assets/images/allpawsondeck/coordinatorVolunteerManagement.PNG" 
+                            alt = "The coordiniator can manage volunteers, and link trainings to volunteers">
+                    </div>
+                    <div id = "APODCounter" style="display:none">1</div>
+                    <br>
+                    <p id = "APODCaption"></p>
+                    
+                    <button class="w3-button w3-display-left" onclick="plusDivs(-1, 'APOD')">&#10094;</button>
+                    <button class="w3-button w3-display-right" onclick="plusDivs(+1, 'APOD')">&#10095;</button>
+                </div>
+        </div>
+
+        <br>
+    </div>
+
+    <!--Disparities-->
     <div id =  "Disparities">
         <br>
         <hr class = "HeaderOutline">
         <button class = "toggleButton" id = "DisparitiesSubBtn" onclick="toggleExp('Disparities')">+</button>
         <span class = "HeaderText"> Disparities</span>
         <span class = "HeaderDetail" id = "DisparitiesDetail" style = "display:block">
-                <i>Access, VBA, Rework of Legacy Database, SQL Backend </i> 
-           </span>
+            <i>Access, VBA, Rework of Legacy Database, SQL Backend </i> 
+        </span>
         <hr class = "HeaderOutline">
         <br>
 
         <div id = "DisparitiesSub"  class="experienceSub" style="display:none">
-            <p> Disparities</p>
             <table>
                 <tr>
                     <td class = "thStandard"><b>Platform:</b></td>
@@ -203,7 +383,7 @@
             <p><b>Overview</b></p>
             <p>
                 Almost every clinical trial run at CTRI is accompanied by a project database. The databases, initially developed by
-                our former DBA Paul Kohn, handle particpant screening, scheduling, daily call lists, appointment flowsheets (which 
+                our former DBA Paul Kohn, handles particpant screening, scheduling, daily call lists, appointment flowsheets (which 
                 vary by condition and visit), assessments, payments, and reporting. Each project pulled components from prior project 
                 DBs, but had to be modified to meet specific project requirements.
             </p>    
@@ -238,44 +418,44 @@
                             id = "Disp1" 
                             onclick="displayModal('Disp1')"
                             src="assets/images/disparities/Menu_OldVsNew.PNG" 
-                            alt = "Disparities (Top) Vs Legacy (Bottom) Menu">
+                            alt = "Disp Image 1">
 
                     <img class="imageFill DisparitiesSlides" 
                             id = "Disp2" 
                             onclick="displayModal('Disp2')"
                             src="assets/images/disparities/FindPerson_OldVsNew.PNG" 
-                            alt = "Disparities (Top) Vs Legacy (Bottom) Find A Person">
+                            alt = "Disp Image 2">
 
                     <img class="imageFill DisparitiesSlides" 
                             id = "Disp3" 
                             onclick="displayModal('Disp3')"
                             src="assets/images/disparities/Demo_OldVsNew.PNG" 
-                            alt = "Disparities (Top) Vs Legacy (Bottom) Demographics">
+                            alt = "Disp Image 3">
                     <img class="imageFill DisparitiesSlides" 
-                        id = "Disp4" 
-                        onclick="displayModal('Disp4')"
-                        src="assets/images/disparities/Sched_OldVsNew.PNG" 
-                        alt = "Disparities (Top) Vs Legacy (Bottom) Schedule">
+                            id = "Disp4" 
+                            onclick="displayModal('Disp4')"
+                            src="assets/images/disparities/Sched_OldVsNew.PNG" 
+                            alt = "Disp Image 4">
                     <img class="imageFill DisparitiesSlides" 
-                        id = "Disp5" 
-                        onclick="displayModal('Disp5')"
-                        src="assets/images/disparities/Flowsheet_OldVsNew.PNG" 
-                        alt = "Disparities (Top) Vs Legacy (Bottom) Flowsheet">
+                            id = "Disp5" 
+                            onclick="displayModal('Disp5')"
+                            src="assets/images/disparities/Flowsheet_OldVsNew.PNG" 
+                            alt = "Disp Image 5">
                     <img class="imageFill DisparitiesSlides" 
-                        id = "Disp6" 
-                        onclick="displayModal('Disp6')"
-                        src="assets/images/disparities/Qualtrics_OldVsNew.PNG" 
-                        alt = "Disparities (Top) Vs Legacy (Bottom) Qualtrics flowsheet items">
+                            id = "Disp6" 
+                            onclick="displayModal('Disp6')"
+                            src="assets/images/disparities/Qualtrics_OldVsNew.PNG" 
+                            alt = "Disp Image 6">
                     <img class="imageFill DisparitiesSlides" 
-                        id = "Disp7" 
-                        onclick="displayModal('Disp7')"
-                        src="assets/images/disparities/PaySubjects_OldVsNew.PNG" 
-                        alt = "Disparities (Top) Vs Legacy (Bottom) Pay Subjects">
+                            id = "Disp7" 
+                            onclick="displayModal('Disp7')"
+                            src="assets/images/disparities/PaySubjects_OldVsNew.PNG" 
+                            alt = "Disp Image 7">
                     <img class="imageFill DisparitiesSlides" 
-                        id = "Disp8" 
-                        onclick="displayModal('Disp8')"
-                        src="assets/images/disparities/FindPerson_NewAltSelections.PNG" 
-                        alt = "Example of dynamic change to field binding in new find a person form">
+                            id = "Disp8" 
+                            onclick="displayModal('Disp8')"
+                            src="assets/images/disparities/FindPerson_NewAltSelections.PNG" 
+                            alt = "Disp Image 8">
                 </div>
                 <div id = "DisparitiesCounter" style="display:none">1</div>
                 <br>
@@ -288,24 +468,461 @@
         <br>
     </div>
 
-    <!--sadf-->
+    <!--IVR Monitoring-->
     <div id =  "IVRMon">
         <br>
         <hr class = "HeaderOutline">
         <button class = "toggleButton" id = "IVRMonSubBtn" onclick="toggleExp('IVRMon')">+</button>
         <span class = "HeaderText"> IVR Monitoring</span>
         <span class = "HeaderDetail" id = "IVRMonDetail" style = "display:block">
-                <i>dotnet, c#, dynamic access to multiple projects via DAL, SQL Backend </i> 
+                <i>dotnet, C#, dynamically swap backends (MSSQL) through DAL, Data Visualization, CTRI</i> 
             </span>
         <hr class = "HeaderOutline">
         <br>
 
         <div id = "IVRMonSub"  class="experienceSub" style="display:none">
-            <p> IVR Monitoring</p>
+            <table>
+                <tr>
+                    <td class = "thStandard"><b>Platform:</b></td>
+                    <td class = "tdStandard">dotnet</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Languages:</b></td>
+                    <td class = "tdStandard">C#</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Data Source:</b></td>
+                    <td class = "tdStandard">Multiple SQL Backends</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"> <b>Size:</b></td>
+                    <td class = "tdStandard"> Medium</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Organization:</b></td>
+                    <td class = "tdStandard"> CTRI</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Notes:</b></td>
+                    <td class = "tdStandard"> Explore architecture with use of decoupled projects and DAL</td>
+                </tr>
+            </table>
+            <p><b>Overview</b></p>
+            <p>
+                When I was brought on to help out with the QUITs project at CTRI, the first task I was assigned
+                was to implement the IVR system.  The first aspect of this was to develop the IVR calls themselves
+                in Aspect.  The second part was to take the P01 IVR call manager application (MS Access) and make 
+                it work with QUITs. This included developing a second aspect to the manager that could contact 
+                participants via an emailed survey link, so they could do the survey online instead of over the 
+                phone.  Like the calls, the emails had to be sent out at the correct times, and record that the 
+                contact had occured.
+            </p>
+            <p>
+                While the call managers themselves were fairly stable, the overall system was plagued with errors.
+                This was amplified over the summer of 2018 as we had significant construction occuring outside our
+                building. VoIP boxes would fail, we struggled with phone lines going dead, power outages would occur
+                and servers would not load properly (call manager or web servers would not reload), or calls would fail
+                simply because we ran out of ports.
+            </p>
+            <p>
+                At the time we had 3 seperate call managers (QUITS, BAVA, P01) running.  This lead to the system
+                requiring heavy monitoring in multiple different projects, and even then we would not always find
+                out about issues until particpants started reporting issues the next day (or even days) after the 
+                start of the outage
+            </p>
+            <p>
+                To combate this I suggested we build a couple of applications.  One that allowed us to monitor all of
+                our projects IVR systems from one application, and a second service that would piggy back off this app
+                and constantly monitor our IVR systems for failures, then send text warning message to myself and other
+                staff if anything went down.
+            </p>
+            <p>
+                As my development skills have progressed I have strived towards writing more effecient code. In Access 
+                this included writting classes like the Query Builder in Disparities, and developing template forms 
+                like Find A Person that can be easily repurposed for new views that required dynamic query modification.
+                As I moved into OOP languages I started thinking more about project architecture. I had been pushing CTRI
+                to move towards center wide development goals, instead of developing apps on a project by project basis.
+                Aspects of the project database, such as the Health Councelors availability, reporting, and the IVR call
+                managers could all be handled by one app, decreasing what needed to be reworked for each new project. To 
+                prove that this was a realistic approach, I was set on making this monitoring app work not just on our 
+                current projects, but to be easily adaptable to future projects as well.    
+            </p>
+            <p> 
+                To accomplish this I decoupled the application into smaller components, including a Data Access Layer for
+                each of the projects it would serve, a parent application with its own DB, including constants, and the
+                informmation about the DALs, the monitoring application, and the monitoring service.  This took a little
+                more work up front, but meant that new projects could be added in simply by creating the DAL and adding it
+                to the list in the parent DB.  This also meant that most of the code for the DAL could be placed in the
+                parent class and only written once, and the app and service did not need to know what they were working on,
+                they just needed to perform their tasks
+            </p>
+            <p>
+                This project helped us immediatly identify outages, and visually monitor the managers for any potential
+                issues not caught by the service.
+            </p>
+            <div class = "imageCaption"> 
+                <div class = "imageContainer" id = "IVRMon">
+                    <img class="imageFill IVRMonSlides" 
+                            id = "IVRMon1" 
+                            onclick="displayModal('IVRMon1')"
+                            src="assets/images/IVRMonitoring/P01Monitoring_AllTime.PNG" 
+                            alt = "All time Success vs Fail for IVR calls in P01">
+                    <img class="imageFill IVRMonSlides" 
+                            id = "IVRMon2" 
+                            onclick="displayModal('IVRMon2')"
+                            src="assets/images/IVRMonitoring/QuitsMonitoring_LastWeek.PNG" 
+                            alt = "Quits Success vs Fail over the last week">
+                    <img class="imageFill IVRMonSlides" 
+                            id = "IVRMon3" 
+                            onclick="displayModal('IVRMon3')"
+                            src="assets/images/IVRMonitoring/QuitsMonitoring_Today.PNG" 
+                            alt = "Quits Success vs Fail over the day">
+                    <img class="imageFill IVRMonSlides" 
+                            id = "IVRMon4" 
+                            onclick="displayModal('IVRMon4')"
+                            src="assets/images/IVRMonitoring/QuitsScheduled_Today.PNG" 
+                            alt = "Quits schedule for the given day">
+                </div>
+                <div id = "IVRMonCounter" style="display:none">1</div>
+                <br>
+                <p id = "IVRMonCaption"></p>
+                
+                <button class="w3-button w3-display-left" onclick="plusDivs(-1, 'IVRMon')">&#10094;</button>
+                <button class="w3-button w3-display-right" onclick="plusDivs(+1, 'IVRMon')">&#10095;</button>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <!--Last FM-->
+    <div id =  "LastFM">
+        <br>
+        <hr class = "HeaderOutline">
+        <button class = "toggleButton" id = "LastFMSubBtn" onclick="toggleExp('LastFM')">+</button>
+        <span class = "HeaderText"> Last FM</span>
+        <span class = "HeaderDetail" id = "LastFMDetail" style = "display:block">
+                <i>dotnet, C#, Azure MSSQL, CS 564 - RDBMS, Group Project</i> 
+            </span>
+        <hr class = "HeaderOutline">
+        <br>
+
+        <div id = "LastFMSub"  class="experienceSub" style="display:none">
+            <table>
+                <tr>
+                    <td class = "thStandard"><b>Platform:</b></td>
+                    <td class = "tdStandard">dotnet</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Languages:</b></td>
+                    <td class = "tdStandard">C#</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Data Source:</b></td>
+                    <td class = "tdStandard">Azure SQL Server</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"> <b>Size:</b></td>
+                    <td class = "tdStandard"> small</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Organization:</b></td>
+                    <td class = "tdStandard"> CS 564 - RDBMS</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Notes:</b></td>
+                    <td class = "tdStandard">Final project for CS 564</td>
+                </tr>
+            </table>
+            <p><b>Overview</b></p>
+            <p> 
+                LastFM was the final project for my RDBMs class.  While not a very large project, it did
+                provide the oppurtunity to work Azure.  This was my first exposure to cloud based data
+                storage.  It also provided me with more exposure to dotnet, and another chance to play around
+                with data visualization.
+            </p>
+            <div class = "imageCaption"> 
+                <div class = "imageContainer" id = "LastFM">
+                    <img class="imageFill LastFMSlides" 
+                            id = "LastFM1" 
+                            onclick="displayModal('LastFM1')"
+                            src="assets/images/lastfm/Dashboard.PNG" 
+                            alt = "Disp Image 1">
+                </div>
+                <div id = "LastFMCounter" style="display:none">1</div>
+                <br>
+                <p id = "LastFMCaption"></p>
+                
+                <button class="w3-button w3-display-left" onclick="plusDivs(-1, 'LastFM')">&#10094;</button>
+                <button class="w3-button w3-display-right" onclick="plusDivs(+1, 'LastFM')">&#10095;</button>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <!--Brackets-->
+    <div id =  "Brackets">
+        <br>
+        <hr class = "HeaderOutline">
+        <button class = "toggleButton" id = "BracketsSubBtn" onclick="toggleExp('Brackets')">+</button>
+        <span class = "HeaderText"> Brackets</span>
+        <span class = "HeaderDetail" id = "BracketsDetail" style = "display:block">
+                <i>Java, JavaFX, CS 400 - Data Structures</i> 
+            </span>
+        <hr class = "HeaderOutline">
+        <br>
+
+        <div id = "BracketsSub"  class="experienceSub" style="display:none">
+            <table>
+                <tr>
+                    <td class = "thStandard"><b>Platform:</b></td>
+                    <td class = "tdStandard">JavaFX</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Languages:</b></td>
+                    <td class = "tdStandard">Java, CSS</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Data Source:</b></td>
+                    <td class = "tdStandard">In Memory Data</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"> <b>Size:</b></td>
+                    <td class = "tdStandard"> small</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Organization:</b></td>
+                    <td class = "tdStandard"> CS 400 - Data Structures</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Notes:</b></td>
+                    <td class = "tdStandard">Final project for CS 400</td>
+                </tr>
+            </table>
+            <p><b>Overview</b></p>
+            <p> While not a very large project, it does prove that I have written code in Java. This was also
+                my first exposure to form development outside of MS Access.  I enjoy java, but found that c#
+                has identical syntext, better libraries for data access, and dotnet contains easy to use form 
+                builders that I found easier to work with than Scene Builder.
+            </p>
+            <div class = "imageCaption"> 
+                <div class = "imageContainer" id = "Brackets">
+                    <img class="imageFill BracketsSlides" 
+                            id = "Brackets1" 
+                            onclick="displayModal('Brackets1')"
+                            src="assets/images/disparities/Menu_OldVsNew.PNG" 
+                            alt = "Disp Image 1">
+                </div>
+                <div id = "BracketsCounter" style="display:none">1</div>
+                <br>
+                <p id = "BracketsCaption"></p>
+                
+                <button class="w3-button w3-display-left" onclick="plusDivs(-1, 'Brackets')">&#10094;</button>
+                <button class="w3-button w3-display-right" onclick="plusDivs(+1, 'Brackets')">&#10095;</button>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <!--Address Book-->
+    <div id =  "AddyBook">
+        <br>
+        <hr class = "HeaderOutline">
+        <button class = "toggleButton" id = "AddyBookSubBtn" onclick="toggleExp('AddyBook')">+</button>
+        <span class = "HeaderText"> Address Book</span>
+        <span class = "HeaderDetail" id = "AddyBookDetail" style = "display:block">
+                <i>MS Access, VBA, XML, SQL Backend, Legacy Overhaul, CTRI</i> 
+            </span>
+        <hr class = "HeaderOutline">
+        <br>
+
+        <div id = "AddyBookSub"  class="experienceSub" style="display:none">
+            <table>
+                <tr>
+                    <td class = "thStandard"><b>Platform:</b></td>
+                    <td class = "tdStandard">MS Access</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Languages:</b></td>
+                    <td class = "tdStandard">VBA, XML</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Data Source:</b></td>
+                    <td class = "tdStandard">SQL Back End</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"> <b>Size:</b></td>
+                    <td class = "tdStandard"> Medium</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Organization:</b></td>
+                    <td class = "tdStandard"> CTRI</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Notes:</b></td>
+                    <td class = "tdStandard">Front and Back end rework of legacy application</td>
+                </tr>
+            </table>
+            <p><b>Overview</b></p>
+            <p> 
+                The address book was the first project I was asked to work on by CTRIs former DBA.  The project
+                was initially developed even before his time there and had some significant issues with the back
+                end design.  This was my first exposure to working with a MS SQL back end, and the first time 
+                reworking someone elses code.  In the end I overhauled aspects of the backend (including splitting
+                existing tables into more normalized forms), and completely redesigned the front end.
+            </p>
+            <div class = "imageCaption"> 
+                <div class = "imageContainer" id = "AddyBook">
+                    <img class="imageFill AddyBookSlides" 
+                            id = "Disp1" 
+                            onclick="displayModal('Disp1')"
+                            src="assets/images/disparities/Menu_OldVsNew.PNG" 
+                            alt = "Disp Image 1">
+                </div>
+                <div id = "AddyBookCounter" style="display:none">1</div>
+                <br>
+                <p id = "AddyBookCaption"></p>
+                
+                <button class="w3-button w3-display-left" onclick="plusDivs(-1, 'AddyBook')">&#10094;</button>
+                <button class="w3-button w3-display-right" onclick="plusDivs(+1, 'AddyBook')">&#10095;</button>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    
+    <!--PRISM-->
+    <div id =  "PRISM">
+        <br>
+        <hr class = "HeaderOutline">
+        <button class = "toggleButton" id = "PRISMSubBtn" onclick="toggleExp('PRISM')">+</button>
+        <span class = "HeaderText"> PRISM</span>
+        <span class = "HeaderDetail" id = "PRISMDetail" style = "display:block">
+                <i>MS Access, VBA, Access RDBMs, First completed professional project</i> 
+            </span>
+        <hr class = "HeaderOutline">
+        <br>
+
+        <div id = "PRISMSub"  class="experienceSub" style="display:none">
+            <table>
+                <tr>
+                    <td class = "thStandard"><b>Platform:</b></td>
+                    <td class = "tdStandard">MS Access</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Languages:</b></td>
+                    <td class = "tdStandard">VBA</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Data Source:</b></td>
+                    <td class = "tdStandard">Acces RDBMS</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"> <b>Size:</b></td>
+                    <td class = "tdStandard"> Medium to large</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Organization:</b></td>
+                    <td class = "tdStandard"> IDRC-UCSF</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Notes:</b></td>
+                    <td class = "tdStandard">First completed professional application</td>
+                </tr>
+            </table>
+            <p><b>Overview</b></p>
+            <p>
+                Working for IDRC in Uganda was an amazing oppurtunity, but provided some unique chalenges.
+                I was brought in to help launch the lab aspects of a new clinical research trial focusing
+                on Malaria. Part of my responsibilities included setting up a series of applications. One
+                that could be used in very remote villages with no internet access to track participant 
+                blood sample collection, and a second application to be used in Kampala, to recieve the data
+                from our three remote sites, run QC on the data and samples, track all samples in Kampala,
+                and allow us to pull said samples for shipment to UCSF Medical in California.
+            </p>
+            <p>
+                This was a challenging process and my first full professional application.  We generated
+                barcodes then used tablets and barcode scanners to collect samples at the remote sites. An
+                export function allowed us to push the data to a thumb drive that was shipped with the samples.
+                In the main lab we pulled the data off the thumbdrive, which instigated the QC and local tracking
+                processes. Overall we ended up collecting and tracking over 50,000 samples.
+            </p>
+            <p> PRISM</p>
+            <div class = "imageCaption"> 
+                <div class = "imageContainer" id = "PRISM">
+                    <img class="imageFill PRISMSlides" 
+                            id = "PRISM1" 
+                            onclick="displayModal('PRISM1')"
+                            src="assets/images/prism/menu.PNG" 
+                            alt = "Main menu">
+                    <img class="imageFill PRISMSlides" 
+                            id = "PRISM2" 
+                            onclick="displayModal('PRISM2')"
+                            src="assets/images/prism/cryoboxes.PNG" 
+                            alt = "Visual view of cryoboxes with ability to insert samples">
+                    <img class="imageFill PRISMSlides" 
+                            id = "PRISM3" 
+                            onclick="displayModal('PRISM3')"
+                            src="assets/images/prism/advancedSearch.PNG" 
+                            alt = "Search for samples.  A second search form tries to predict where lost samples ended up">
+                    <img class="imageFill PRISMSlides" 
+                            id = "PRISM4" 
+                            onclick="displayModal('PRISM4')"
+                            src="assets/images/prism/ShipmentQC.PNG" 
+                            alt = "QC for checking shipments that came into the lab from remote sites">
+                    <img class="imageFill PRISMSlides" 
+                            id = "PRISM5" 
+                            onclick="displayModal('PRISM5')"
+                            src="assets/images/prism/trackingBoxes.PNG" 
+                            alt = "Tacking box locations within different storage devices">
+                </div>
+                <div id = "PRISMCounter" style="display:none">1</div>
+                <br>
+                <p id = "PRISMCaption"></p>
+                
+                <button class="w3-button w3-display-left" onclick="plusDivs(-1, 'PRISM')">&#10094;</button>
+                <button class="w3-button w3-display-right" onclick="plusDivs(+1, 'PRISM')">&#10095;</button>
+            </div>
         </div>
 
         <br>
+        
     </div>
+
+    <!--ETC-->
+    <div id =  "ETC">
+        <br>
+        <hr class = "HeaderOutline">
+        <button class = "toggleButton" id = "ETCSubBtn" onclick="toggleExp('ETC')">+</button>
+        <span class = "HeaderText"> Additional Work Projects</span>
+        <span class = "HeaderDetail" id = "ETCDetail" style = "display:block">
+                <i>Some additional projects from CTRI</i> 
+            </span>
+        <hr class = "HeaderOutline">
+        <br>
+
+        <div id = "ETCSub"  class="experienceSub" style="display:none">
+            <p> </p>
+            <div class = "imageCaption"> 
+                <div class = "imageContainer" id = "ETC">
+                    <img class="imageFill ETCSlides" 
+                            id = "Disp1" 
+                            onclick="displayModal('Disp1')"
+                            src="assets/images/disparities/Menu_OldVsNew.PNG" 
+                            alt = "Disp Image 1">
+                </div>
+                <div id = "ETCCounter" style="display:none">1</div>
+                <br>
+                <p id = "ETCCaption"></p>
+                
+                <button class="w3-button w3-display-left" onclick="plusDivs(-1, 'ETC')">&#10094;</button>
+                <button class="w3-button w3-display-right" onclick="plusDivs(+1, 'ETC')">&#10095;</button>
+            </div>
+        </div>
+
+        <br>
+        
+    </div>
+
 </div>
 
 <!-- The Modal -->

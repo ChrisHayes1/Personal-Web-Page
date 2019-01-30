@@ -1,0 +1,9 @@
+***Projects***
+-Add screen shot of IVR Monitoring service text from phone 
+-LastFM ->  Once I get server up, get more screen shots
+-RiceRock -> When was this
+-Address Book -> When was this
+-PRISM -> Find PRISM remote site db and add to repo and screen shots
+
+***REPO***
+-Get new LastFM server up and running, make sure it works

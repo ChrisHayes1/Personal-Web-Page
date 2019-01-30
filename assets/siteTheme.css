@@ -257,3 +257,17 @@
   }
 }
 
+.keyProjects{
+  margin: 1em auto;
+  border: 1px solid #95b3d7;
+  text-align: center;
+}
+
+.keyProjectsBody:nth-child(even) {background-color: #f2f2f2;}
+
+.keyProjectsHead{
+    background: #4f81bd;
+    text-transform: lowercase;
+    font-size: 15px;
+    color: #fff;
+}

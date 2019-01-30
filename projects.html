@@ -6,7 +6,7 @@
             <th>Project</th>
             <th>Platform</th>
             <th>Languages</th>
-            <th>Data Collection</th>
+            <th>Data Source</th>
             <th>Scale</th>
             <th>Organization</th>
             <th>Notes</th>
@@ -19,7 +19,7 @@
                 <td>Split Access Backend</td>
                 <td>30k lines of code, 150+ tables</td>
                 <td>CTRI</td>
-                <td></td>
+                <td>Largest solo project</td>
             </tr>
             <tr>
                 <td><a href="#" onclick="toggleExpFull('Disparities'), false">Disparities</a></td>
@@ -49,7 +49,78 @@
         <br>
 
         <div id = "DatanetsSub"  class="experienceSub" style="display:block">
-            <p> The Datanets</p>       
+            <table>
+                <tr>
+                    <td class = "thStandard"><b>Platform:</b></td>
+                    <td class = "tdStandard">MS Access</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Languages:</b></td>
+                    <td class = "tdStandard">VBA, Pyhton, XML (Ribbon)</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Data Source:</b></td>
+                    <td class = "tdStandard">Split Access Back-End</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"> <b>Size:</b></td>
+                    <td class = "tdStandard"> Large</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Organization:</b></td>
+                    <td class = "tdStandard"> CTRI</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Notes:</b></td>
+                    <td class = "tdStandard"> Largest solo project</td>
+                </tr>
+            </table>
+
+            <p><b>Overview</b></p>
+            <p> 
+                One of the firsts tasks I was asked to perform on arrivale at CTRI was to develop an access application 
+                that could track data dictionaries for datasets associated with the center.  The center runs numerous 
+                concurrent studies ranging from tracking 20-30 participants over a couple of months up to tracking
+                thousands of participants over the series of 1-3 years.  Studies could produce hundreds of raw datasets from
+                many different sources, and the previous system of tracking via excel was getting out of hand. In addition
+                to adding datasets, I added the ability to track the 'lineage' of datasets and variables. This allowed us
+                to follow the progression of raw data through the cleaning process and into large analysis sets.
+            </p>       
+            <p>
+                In my data management role it quickly became apparent that the center was running into issues with 
+                consistancy among assesments.  Even within the same project an assessment with multiple time points asked
+                the same question differently, both in terms of phrasing, and code book responses. It quickly became apparent
+                that my application could do more to help the center.
+            </p>
+            <p>
+                By linking the variables in the dataset to a unique list of variables (which we called 'meta' variabels), I 
+                was able to add functionality to compare like variables against each other.  This was so successful that we moved
+                the development of Qualtrics assesments into the Datanets, and added in the ability to export the created assessments
+                into files that could be imported directly into Qualtrics.  This significantly improved consistancy, cut down on 
+                transcription errors, and sped up project development. This also turned the Datanets into a multi-user project, with
+                project management and the Qualtrics team as added users.
+            </p>
+            <p>
+                All of our data cleaning and manipulation is handled through SPSS syntax.  This gives us an easy to follow
+                (and justify) trail of how our data was processed. But developing syntax can be tedious and time consuming.
+                Given that all of the data was already being tracked in the Datanets, the next logical step was to get the 
+                datanets to automate significant aspects of the syntax development.  Initially this was doen through a simple
+                form allowing me to select variables and run different operations to generate syntax (keep statements, recodes,
+                value and variable labels, etc).  I then moved into creating SPSS syntax templates that could be manipulated
+                in one easy step to generate the bulk of both the cleaning syntax, and the syntax necessary to generate merged
+                analysis sets.  This greatly reduced the turn around time in the data management process, getting PIs qaulity 
+                data faster. 
+            </p>
+            <p>
+                Additional tools were added that allowed access to interface with SPSS via python scripts.  These tools included
+                validating the variables in the Datanets matched the variables in the dataset, running syntax directly from the 
+                Datanets, and importing data dictionaries directly from SPSS data files.
+            </p>
+            <p>
+                The datanets quickly grew into the largest solo project I have ever produced.  It contains **stats** and provides
+                tools in the following ares
+                **tools**
+            </p>
             
             <div class = "imageCaption"> 
                 <div class = "imageContainer" id = "Datanets">
@@ -102,6 +173,65 @@
 
         <div id = "DisparitiesSub"  class="experienceSub" style="display:none">
             <p> Disparities</p>
+            <table>
+                <tr>
+                    <td class = "thStandard"><b>Platform:</b></td>
+                    <td class = "tdStandard">MS Access</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Languages:</b></td>
+                    <td class = "tdStandard">VBA</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Data Source:</b></td>
+                    <td class = "tdStandard">SQL Back-End</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"> <b>Size:</b></td>
+                    <td class = "tdStandard"> Medium</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Organization:</b></td>
+                    <td class = "tdStandard"> CTRI</td>
+                </tr>
+                <tr>
+                    <td class = "thStandard"><b>Notes:</b></td>
+                    <td class = "tdStandard"> Rework of Legacy Code, focus on design</td>
+                </tr>
+            </table>
+
+            <p><b>Overview</b></p>
+            <p>
+                Almost every clinical trial run at CTRI is accompanied by a project database. The databases, initially developed by
+                our former DBA Paul Kohn, handle particpant screening, scheduling, daily call lists, appointment flowsheets (which 
+                vary by condition and visit), assessments, payments, and reporting. Each project pulled components from prior project 
+                DBs, but had to be modified to meet specific project requirements.
+            </p>    
+            <p>
+                Prior to Pauls departure I was brought in to help with the development of the QUITS database, and after he left I was
+                tasked with developing the new Disparities project.  Most of the work involved pulling components from multiple
+                previous applications, and refactoring the code to get it all working together. One issue with previous projects was a 
+                detached and clutered UI.  As part of this project I took the oppurtunity to clean up the  interface, improving usability
+                and creating a cohesive application.
+            </p>
+            <p>
+                One contribution I provided to QUITs and carried over to Disparities was the redevelopment of the 'Find A Person' form.
+                The old form involved the development of multiple queries that were swapped out as search fields were changed.  This 
+                approach, used throughout the project databases, was effecient under heavy load or for users with poor connectivity, but 
+                having numerous queries involved in one form made modification a much more arduose process.  An alternative approach, 
+                using immediate if statements, allows for quick modification, but slows down significantly under heavy use. To overcome 
+                both of these issues I built a class that binds form fields directly to a base query and dynamically builds and modifies
+                the query as search parameters change.  The bound fields can be used for either searching or sorting the associated 
+                dataset. This approach has the added benefit of allowing for the dynamic and live swap of fields in the query and thier 
+                bindings.  Drop downs on the Find A Person form, for example, allow you to swap between study status, email, and phone 
+                number, using the same two buttons for searching and sorting depending on what is selected.  This made for quick loads, 
+                easy modification, and fitting more fields in a limmited space. The easy initialization and binding allowed the class
+                to be utilized as a template and implemented on other forms carrying out similar functionality. 
+            </p>
+            <p>
+
+            </p>
+
             <div class = "imageCaption"> 
                 <div class = "imageContainer" id = "Disparities">
                     <img class="imageFill DisparitiesSlides" 

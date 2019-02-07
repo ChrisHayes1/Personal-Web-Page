@@ -46,7 +46,7 @@
     border-color: rgb(150, 56, 56);
   }
 
-  a {
+  .keyPrjTbl {
     display: block;
     width: 200px;
     height: 35px;
@@ -54,7 +54,7 @@
     text-decoration: none;
   }
 
-  a:hover {
+  .keyPrjTbl:hover {
     font-style:italic
   }
 
@@ -175,6 +175,24 @@
   transition: 0.3s;
 }
 
+.QualStar{
+  display: inline;
+  text-align: left;
+  float:left;
+  width: 3vw;
+  height: 3vh;
+}
+
+.QualStarHeader{
+  
+  float:left;
+  text-align: left;
+  font-weight: bolder;
+  font-size: 1.25em;
+  color: rgb(68, 114, 156);
+  margin-left: 8px;
+}
+
 
 
 .imageFill:hover {opacity: 0.7;}
@@ -270,4 +288,17 @@
     text-transform: lowercase;
     font-size: 15px;
     color: #fff;
+}
+
+.qualies{
+  margin: 1em auto;
+  border: 1px solid ;
+  text-align: left;
+  column-width: 25%;
+}
+
+
+.qualiesHead{
+    text-transform: lowercase;
+    font-size: 15px;
 }

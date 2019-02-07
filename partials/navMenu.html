@@ -1,29 +1,30 @@
 <div id = "volunteerbuttons">
     <b><h2>
-    <a onclick="changeSub('about.html', 'navAbout')" 
-        class = "NavMenuButton " id ="navAbout" href="javascript:void(0);"> 
-        About 
-    </a><hr class = "NavBreaks" id ="navAbout">   
-
+    
     <a onclick="changeSub('qualifications.html', 'navQualifications')" 
-        class = "NavMenuButton " id ="navQualifications" href="javascript:void(0);"> 
+        class = "NavMenuButton keyPrjTbl" id ="navQualifications" href="javascript:void(0);"> 
         Qualifications 
     </a><hr class = "NavBreaks" id ="navQualifications">
 
     <a onclick="changeSub('experience.html', 'navExperience')" 
-        class = "NavMenuButton " id ="navExperience" href="javascript:void(0);"> 
+        class = "NavMenuButton keyPrjTbl" id ="navExperience" href="javascript:void(0);"> 
         Experience 
     </a><hr class = "NavBreaks" id ="navExperience">
 
     <a onclick="changeSub('projects.html', 'navProjects')" 
-        class = "NavMenuButton " id ="navProjects" href="javascript:void(0);"> 
+        class = "NavMenuButton keyPrjTbl" id ="navProjects" href="javascript:void(0);"> 
         Projects 
     </a><hr class = "NavBreaks" id ="navProjects">
 
     <a onclick="changeSub('education.html', 'navEducation')" 
-        class = "NavMenuButton " id ="navEducation" href="javascript:void(0);"> 
+        class = "NavMenuButton keyPrjTbl" id ="navEducation" href="javascript:void(0);"> 
         Education 
     </a><hr class = "NavBreaks" id ="navEducation">
+
+    <a onclick="changeSub('about.html', 'navAbout')" 
+        class = "NavMenuButton keyPrjTbl" id ="navAbout" href="javascript:void(0);"> 
+        About 
+    </a><hr class = "NavBreaks" id ="navAbout">  
 
     </h2>
     </b>
@@ -98,8 +99,8 @@
         });
     }
 
-    var DEF_PAGE = "about.html";
-    var DEF_ID = "navAbout";
+    var DEF_PAGE = "qualifications.html";
+    var DEF_ID = "navQualifications";
     var DEF_PROJECT = "Datanets"
 
     $(function() {

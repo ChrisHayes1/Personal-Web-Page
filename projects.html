@@ -19,7 +19,7 @@
         <tbody class = "keyProjectsBody">
             <tr>
                 <td>2013-Present</td>
-                <td><a href="#" onclick="toggleExpFull('Datanets'), false">Datanets</a></td>
+                <td><a href="#" class = "keyPrjTbl" onclick="toggleExpFull('Datanets'), false">Datanets</a></td>
                 <td>MS Access</td>
                 <td>
                     <p>VBA <br>
@@ -34,7 +34,7 @@
             </tr>
             <tr>
                 <td>Fall-2018</td>
-                <td><a href="#" onclick="toggleExpFull('APOD'), false">All Paws On Deck</a></td>
+                <td><a href="#" class = "keyPrjTbl" onclick="toggleExpFull('APOD'), false">All Paws On Deck</a></td>
                 <td>Node.JS <br> Express <br> ESJ</td>
                 <td><p>Javascript <br> HTML <br> CSS</p></td>
                 <td>MongoDB</td>
@@ -45,7 +45,7 @@
             </tr>
             <tr>
                 <td>Summer-2018</td>
-                <td><a href="#" onclick="toggleExpFull('Disparities'), false">Disparities</a></td>
+                <td><a href="#" class = "keyPrjTbl" onclick="toggleExpFull('Disparities'), false">Disparities</a></td>
                 <td>MS Access</td>
                 <td>VBA</td>
                 <td><p>SQL Backend, <br> Test QC, and Prod env</p></td>
@@ -56,7 +56,7 @@
             </tr>
             <tr>
                 <td>Summer-2018</td>
-                <td><a href="#" onclick="toggleExpFull('IVRMon'), false">IVR Monitoring</a></td>
+                <td><a href="#" class = "keyPrjTbl" onclick="toggleExpFull('IVRMon'), false">IVR Monitoring</a></td>
                 <td><p>dotnet</p></td>
                 <td>C#</td>
                 <td>Multiple SQL Backends via dynamic DAL</td>
@@ -67,7 +67,7 @@
             </tr>
             <tr>
                 <td>Summer-2018</td>
-                <td><a href="#" onclick="toggleExpFull('LastFM'), false">Last FM</a></td>
+                <td><a href="#" class = "keyPrjTbl" onclick="toggleExpFull('LastFM'), false">Last FM</a></td>
                 <td><p>dotnet</p></td>
                 <td>C#</td>
                 <td>Azure MSSQL</td>
@@ -78,7 +78,7 @@
             </tr>
             <tr>
                 <td>Spring 2018</std>
-                <td><a href="#" onclick="toggleExpFull('Brackets'), false">Brackets</a></td>
+                <td><a href="#" class = "keyPrjTbl" onclick="toggleExpFull('Brackets'), false">Brackets</a></td>
                 <td>javaFX</td>
                 <td><p>Java <br> CSS </p></td>
                 <td>In Memory Data</td>
@@ -89,7 +89,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><a href="#" onclick="toggleExpFull('AddyBook'), false">Address Book</a></td>
+                <td><a href="#" class = "keyPrjTbl" onclick="toggleExpFull('AddyBook'), false">Address Book</a></td>
                 <td>MS Access</td>
                 <td><p>VBA <br> XML </p></td>
                 <td>SQL Backend</td>
@@ -100,7 +100,7 @@
             </tr>
             <tr>
                 <td>Small</td>
-                <td><a href="#" onclick="toggleExpFull('RiceRocks'), false">Rice Rocks (Astroids)</a></td>
+                <td><a href="#" class = "keyPrjTbl" onclick="toggleExpFull('RiceRocks'), false">Rice Rocks (Astroids)</a></td>
                 <td>Code Sculptor</td>
                 <td><p>Python</p></td>
                 <td>In Memory Data</td>
@@ -111,7 +111,7 @@
             </tr>
             <tr>
                 <td>2011</td>
-                <td><a href="#" onclick="toggleExpFull('PRISM'), false">PRISM</a></td>
+                <td><a href="#" class = "keyPrjTbl" onclick="toggleExpFull('PRISM'), false">PRISM</a></td>
                 <td>MS Access</td>
                 <td><p>VBA</p></td>
                 <td>Access RDBMs</td>
@@ -130,7 +130,7 @@
     <div id =  "Datanets">
         <br>
         <hr class = "HeaderOutline">
-        <button class = "toggleButton" id = "DatanetsSubBtn" onclick="toggleExp('Datanets')">-</button>
+        <button class = "toggleButton" id = "DatanetsSubBtn" class = "keyPrjTbl" onclick="toggleExp('Datanets')">-</button>
         <span class = "HeaderText"> The Datanets</span>
         <span class = "HeaderDetail" id = "DatanetsDetail" style = "display:none">
              <i>Access, VBA, Pyhton, XML, Split Backend, Large Project, CTRI </i> 
@@ -253,7 +253,7 @@
     <div id =  "APOD">
         <br>
         <hr class = "HeaderOutline">
-        <button class = "toggleButton" id = "APODSubBtn" onclick="toggleExp('APOD')">+</button>
+        <button class = "toggleButton" id = "APODSubBtn" class = "keyPrjTbl" onclick="toggleExp('APOD')">+</button>
         <span class = "HeaderText"> All Paws On Deck</span>
         <span class = "HeaderDetail" id = "APODDetail" style = "display:block">
                 <i>Node.JS, Express, EJS, Mongo, Javascript, HTML, CSS, CS 506 (SE), First Web Dev</i> 
@@ -344,7 +344,7 @@
     <div id =  "Disparities">
         <br>
         <hr class = "HeaderOutline">
-        <button class = "toggleButton" id = "DisparitiesSubBtn" onclick="toggleExp('Disparities')">+</button>
+        <button class = "toggleButton" id = "DisparitiesSubBtn" class = "keyPrjTbl" onclick="toggleExp('Disparities')">+</button>
         <span class = "HeaderText"> Disparities</span>
         <span class = "HeaderDetail" id = "DisparitiesDetail" style = "display:block">
             <i>Access, VBA, Rework of Legacy Database, SQL Backend </i> 
@@ -472,7 +472,7 @@
     <div id =  "IVRMon">
         <br>
         <hr class = "HeaderOutline">
-        <button class = "toggleButton" id = "IVRMonSubBtn" onclick="toggleExp('IVRMon')">+</button>
+        <button class = "toggleButton" id = "IVRMonSubBtn" class = "keyPrjTbl" onclick="toggleExp('IVRMon')">+</button>
         <span class = "HeaderText"> IVR Monitoring</span>
         <span class = "HeaderDetail" id = "IVRMonDetail" style = "display:block">
                 <i>dotnet, C#, dynamically swap backends (MSSQL) through DAL, Data Visualization, CTRI</i> 
@@ -598,7 +598,7 @@
     <div id =  "LastFM">
         <br>
         <hr class = "HeaderOutline">
-        <button class = "toggleButton" id = "LastFMSubBtn" onclick="toggleExp('LastFM')">+</button>
+        <button class = "toggleButton" id = "LastFMSubBtn" class = "keyPrjTbl" onclick="toggleExp('LastFM')">+</button>
         <span class = "HeaderText"> Last FM</span>
         <span class = "HeaderDetail" id = "LastFMDetail" style = "display:block">
                 <i>dotnet, C#, Azure MSSQL, CS 564 - RDBMS, Group Project</i> 
@@ -663,7 +663,7 @@
     <div id =  "Brackets">
         <br>
         <hr class = "HeaderOutline">
-        <button class = "toggleButton" id = "BracketsSubBtn" onclick="toggleExp('Brackets')">+</button>
+        <button class = "toggleButton" id = "BracketsSubBtn" class = "keyPrjTbl" onclick="toggleExp('Brackets')">+</button>
         <span class = "HeaderText"> Brackets</span>
         <span class = "HeaderDetail" id = "BracketsDetail" style = "display:block">
                 <i>Java, JavaFX, CS 400 - Data Structures</i> 
@@ -727,7 +727,7 @@
     <div id =  "AddyBook">
         <br>
         <hr class = "HeaderOutline">
-        <button class = "toggleButton" id = "AddyBookSubBtn" onclick="toggleExp('AddyBook')">+</button>
+        <button class = "toggleButton" id = "AddyBookSubBtn" class = "keyPrjTbl" onclick="toggleExp('AddyBook')">+</button>
         <span class = "HeaderText"> Address Book</span>
         <span class = "HeaderDetail" id = "AddyBookDetail" style = "display:block">
                 <i>MS Access, VBA, XML, SQL Backend, Legacy Overhaul, CTRI</i> 
@@ -794,7 +794,7 @@
     <div id =  "PRISM">
         <br>
         <hr class = "HeaderOutline">
-        <button class = "toggleButton" id = "PRISMSubBtn" onclick="toggleExp('PRISM')">+</button>
+        <button class = "toggleButton" id = "PRISMSubBtn" class = "keyPrjTbl" onclick="toggleExp('PRISM')">+</button>
         <span class = "HeaderText"> PRISM</span>
         <span class = "HeaderDetail" id = "PRISMDetail" style = "display:block">
                 <i>MS Access, VBA, Access RDBMs, First completed professional project</i> 
@@ -892,7 +892,7 @@
     <div id =  "ETC">
         <br>
         <hr class = "HeaderOutline">
-        <button class = "toggleButton" id = "ETCSubBtn" onclick="toggleExp('ETC')">+</button>
+        <button class = "toggleButton" id = "ETCSubBtn" class = "keyPrjTbl" onclick="toggleExp('ETC')">+</button>
         <span class = "HeaderText"> Additional Work Projects</span>
         <span class = "HeaderDetail" id = "ETCDetail" style = "display:block">
                 <i>Some additional projects from CTRI</i> 

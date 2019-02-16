@@ -1,50 +1,146 @@
-  /*  header style */
-  header {
-    background-color: 	#1F4E79;
-    color: white;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+/****************
+* Layout
+****************/
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  margin: 0; /**Drops border around body**/
+}
+
+/*  header style */
+header {
+  position: relative;
+  height: 17vh;
+  padding: 0;
+  background-color: 	#1F4E79;
+  color: white;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+header h1 {
+  padding-top: 2vh;
+  padding-right: 2vh;
+  margin: 0;
+  text-align: right;
+  font-size: 2.5em;
+}
+
+header p {  
+  position: absolute;
+  bottom: 10px;
+  text-align: left;  
+  padding-left: 1vw;
+  margin: 0;
+  padding-top: 7vh;
+  font-size: 1.5em;
+  display: inline-block;
+  width: 18%;
+  /* background-color: white; */
+}
+
+
+/****************
+* Nav Menu and Article
+****************/
+
+
+
+/*  two columns/boxes that floats next to each other */
+
+/**Nav Menu**/
+
+nav {
+  margin: 0;
+  height: 80vh;
+  width: 18%;
+  padding-left: 1vw;
+  background-image: linear-gradient(to right, #d5e7f1, #87b7d8);
+  float: left;
+  vertical-align: top;
+}
+
+.NavMenuButton {
+  position: relative;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  color: black;
+
+  text-align: left;
+  height: 35px;
+  line-height: 30px;
+  width: 100%;
+  display: "block";
+  font-size: 1em;
+}
+
+/*nav menu item underline */
+.NavBreaks {
+  border: 1px solid rgb(104, 177, 211);
+  margin-top: 2px;
+  margin-bottom: 35px;
+  margin-right: 5px;
+}
+
+/*color of selected menu button*/
+.NavMenuSelection {
+  color: rgb(150, 56, 56);
+  font-style: italic;
+}
+
+
+/*color of selected menu item underline*/
+.NavMenuSelectionBar{
+  border-color: rgb(150, 56, 56);
+}
+
+/**Article**/
+
+ article {
+  margin: 0;
+  height: 80vh;
+  width: 82%;
+  float: left;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  overflow: auto;
+  background-color: white;
+  color: black;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  vertical-align: top;
+}
+
+  /* Clear floats after the columns */
+  section:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
-  /*  two columns/boxes that floats next to each other */
-  nav {
-    background-image: linear-gradient(to right, #d5e7f1, #87b7d8);
-  }
+/* footer style */
+footer {
+  height: 3vh;
+  background-color: #7b7988;
+  color: white;
+  padding: 1px;
+  text-align: center;
+  vertical-align: middle;
+}
 
-  article {
-    background-color: white;
-    color: black;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+/* @media (max-width: 400px) {
+  nav, article {
+      width: 100%;
+      height: auto;
   }
+} */
 
- 
-  .NavMenuButton {
-    position: relative;
-    margin-top: 2px;
-    margin-bottom: 1px;
-    color: black;
-    align-items: center;
-    text-align: left;
-    height: 35px;
-    line-height: 30px;
-    width: 100%;
-    display: "block";
-  }
+/****************
+* 
+****************/
 
-  .NavMenuSelection {
-    color: rgb(150, 56, 56);
-    font-style: italic;
-  }
-
-
-  .NavBreaks {
-    border: 1px solid rgb(104, 177, 211);
-    margin-top: 2px;
-    margin-bottom: 35px;
-  }
-
-  .NavMenuSelectionBar{
-    border-color: rgb(150, 56, 56);
-  }
+  
 
   .keyPrjTbl {
     display: block;
@@ -69,13 +165,16 @@
     padding: 0;
   }
 
- 
+ /************
+ * Header text within articles
+ ************/
 
   .HeaderOutline {
     border: 1px solid rgb(134, 138, 139);
     margin-top: 3px;
     margin-bottom: 0px;
     margin-right: 10px;
+    display: block;
   }
 
   .HeaderDetail {
@@ -97,15 +196,8 @@
     vertical-align: inherit;
   }
 
-  .subHeader {
-    display: inline;
-    float: left;
-    font-size: x-large
-  }
-  .subSubHeader{
+  
 
-    float: right;
-  }
 
   .ExperienceGroup{
     text-align: left;
@@ -175,25 +267,76 @@
   transition: 0.3s;
 }
 
+
+/****************
+* Qualifications
+****************/
+ 
+
+/*Stars and header*/
+
+.qualiesSection{
+  width: 70%;
+  margin: 0 auto;
+  
+}
+.qualHeader{
+  text-align: center;
+  background: white;
+  padding-top: 1em;
+  padding-bottom: .1em;
+  opacity: .5;
+}
+.qualiesSection hr{
+  margin: 0;
+}
 .QualStar{
-  display: inline;
-  text-align: left;
-  float:left;
-  width: 3vw;
   height: 3vh;
+  margin: 0 auto;
 }
 
 .QualStarHeader{
+  margin: 0;
   
-  float:left;
-  text-align: left;
   font-weight: bolder;
-  font-size: 1.25em;
+  font-size: 2em;
   color: rgb(68, 114, 156);
-  margin-left: 8px;
+
+}
+
+/*Internal table*/
+.qualiesTable{
+  display: block;
+}
+
+.qualiesTable table{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.qualiesTable th{
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.qualiesTable td{
+  text-align: center;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 1em;
+  vertical-align: top;
+}
+
+.qualiesTable td p{
+  margin: 0;
+  padding-bottom: 5px;
 }
 
 
+/****************
+* 
+****************/
 
 .imageFill:hover {opacity: 0.7;}
 
@@ -290,15 +433,4 @@
     color: #fff;
 }
 
-.qualies{
-  margin: 1em auto;
-  border: 1px solid ;
-  text-align: left;
-  column-width: 25%;
-}
 
-
-.qualiesHead{
-    text-transform: lowercase;
-    font-size: 15px;
-}

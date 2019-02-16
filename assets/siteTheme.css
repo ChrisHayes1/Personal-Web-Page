@@ -12,6 +12,7 @@ body {
 
 /*  header style */
 header {
+  position: relative;
   height: 17vh;
   padding: 0;
   background-color: 	#1F4E79;
@@ -28,12 +29,16 @@ header h1 {
 }
 
 header p {  
-  text-align: center;  
-  padding-top: 2vh;
-  vertical-align: center;
+  position: absolute;
+  bottom: 10px;
+  text-align: left;  
+  padding-left: 1vw;
+  margin: 0;
+  padding-top: 7vh;
   font-size: 1.5em;
   display: inline-block;
-  width: 250px;
+  width: 18%;
+  /* background-color: white; */
 }
 
 
@@ -50,7 +55,7 @@ header p {
 nav {
   margin: 0;
   height: 80vh;
-  width: 15%;
+  width: 18%;
   padding-left: 1vw;
   background-image: linear-gradient(to right, #d5e7f1, #87b7d8);
   float: left;
@@ -62,7 +67,7 @@ nav {
   margin-top: 2px;
   margin-bottom: 1px;
   color: black;
-  align-items: center;
+
   text-align: left;
   height: 35px;
   line-height: 30px;
@@ -71,18 +76,22 @@ nav {
   font-size: 1em;
 }
 
+/*nav menu item underline */
+.NavBreaks {
+  border: 1px solid rgb(104, 177, 211);
+  margin-top: 2px;
+  margin-bottom: 35px;
+  margin-right: 5px;
+}
+
+/*color of selected menu button*/
 .NavMenuSelection {
   color: rgb(150, 56, 56);
   font-style: italic;
 }
 
 
-.NavBreaks {
-  border: 1px solid rgb(104, 177, 211);
-  margin-top: 2px;
-  margin-bottom: 35px;
-}
-
+/*color of selected menu item underline*/
 .NavMenuSelectionBar{
   border-color: rgb(150, 56, 56);
 }
@@ -92,9 +101,10 @@ nav {
  article {
   margin: 0;
   height: 80vh;
-  width: 85%;
+  width: 82%;
   float: left;
   padding-left: 1.1em;
+  padding-right: 1.1em;
   overflow: auto;
   background-color: white;
   color: black;
@@ -127,13 +137,9 @@ footer {
 } */
 
 /****************
-* Qualifications
+* 
 ****************/
 
-
-
-
- 
   
 
   .keyPrjTbl {
@@ -269,36 +275,62 @@ footer {
 
 /*Stars and header*/
 
+.qualiesSection{
+  width: 70%;
+  margin: 0 auto;
+  
+}
+.qualHeader{
+  text-align: center;
+  background: white;
+  padding-top: 1em;
+  padding-bottom: .1em;
+  opacity: .5;
+}
+.qualiesSection hr{
+  margin: 0;
+}
 .QualStar{
-  display: inline;
-  text-align: left;
-  float:left;
-  width: 3vw;
   height: 3vh;
+  margin: 0 auto;
 }
 
 .QualStarHeader{
+  margin: 0;
   
-  float:left;
-  text-align: left;
   font-weight: bolder;
-  font-size: 1.25em;
+  font-size: 2em;
   color: rgb(68, 114, 156);
-  margin-left: 8px;
+
 }
 
-/*Qaulification table*/
-.qualies{
-  margin: 1em auto;
-  border: 1px solid ;
-  text-align: left;
-  column-width: 25%;
+/*Internal table*/
+.qualiesTable{
+  display: block;
 }
 
+.qualiesTable table{
+  width: 100%;
+  margin: 0 auto;
+}
 
-.qualiesHead{
-    text-transform: lowercase;
-    font-size: 15px;
+.qualiesTable th{
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.qualiesTable td{
+  text-align: center;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 1em;
+  vertical-align: top;
+}
+
+.qualiesTable td p{
+  margin: 0;
+  padding-bottom: 5px;
 }
 
 
@@ -400,4 +432,5 @@ footer {
     font-size: 15px;
     color: #fff;
 }
+
 
